@@ -1,0 +1,180 @@
+.card {
+  height: 52rem;
+  position: relative;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+
+  &__side {
+    height: 52rem;
+    width: 100%;
+    box-shadow: $box-shadow-default;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: all 0.8s ease;
+
+    &--front {
+      background-color: $color-white;
+    }
+
+    &--back {
+      transform: rotateY(-180deg);
+
+      &--1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-orange-light,
+          $color-orange-dark
+        );
+      }
+
+      &--2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-green-light,
+          $color-green-dark
+        );
+      }
+
+      &--3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-blue-light,
+          $color-blue-dark
+        );
+      }
+    }
+  }
+
+  // Hover
+
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  //  Card Front Side
+
+  &__photo {
+    height: 40%;
+    background-size: cover;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-orange-light,
+          $color-orange-dark
+        ),
+        url(../../img/nat-5.jpg);
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-green-light,
+          $color-green-dark
+        ),
+        url(../../img/nat-6.jpg);
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-blue-light,
+          $color-blue-dark
+        ),
+        url(../../img/nat-7.jpg);
+    }
+  }
+
+  &__heading {
+    position: absolute;
+    top: 10rem;
+    right: 2rem;
+    width: 68%;
+    color: $color-white;
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: right;
+
+    &-span {
+      text-transform: uppercase;
+      padding: 1rem 1.5rem;
+
+      &--1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-orange-light,
+          $color-orange-dark
+        );
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+      }
+
+      &--2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-green-light,
+          $color-green-dark
+        );
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+      }
+
+      &--3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-blue-light,
+          $color-blue-dark
+        );
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 3rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__item {
+    padding: 1rem;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-grey-light-2;
+    }
+  }
+
+  //   Card Back Side
+
+  &__price-box {
+    @include centering;
+    width: 90%;
+  }
+
+  &__price {
+    color: $color-white;
+    margin-bottom: $margin-bottom-big;
+
+    &--only {
+      display: block;
+      font-size: $default-font-size;
+    }
+    &--value {
+      display: block;
+      font-size: 7rem;
+      font-weight: 100;
+    }
+  }
+}
