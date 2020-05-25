@@ -8,4 +8,8 @@
     background-size: cover;
     background-position: 100% 65%;
   }
+
+  @include respond(phone-small) {
+    height: 66.666vh;
+  }
 }

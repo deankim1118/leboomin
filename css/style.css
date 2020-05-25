@@ -13,6 +13,15 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 43.75%; } }
+  @media only screen and (max-width: 25em) {
+    html {
+      font-size: 37.5%; } }
+  @media only screen and (max-width: 330px) {
+    html {
+      font-size: 31.25%; } }
 
 body {
   box-sizing: border-box;
@@ -81,7 +90,10 @@ body {
       height: 30vh; } }
   .footer__container {
     display: flex;
-    height: 55%; }
+    height: 100%; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__container {
+        flex-direction: column; } }
   .footer-left {
     width: 50%;
     display: flex;
@@ -89,10 +101,13 @@ body {
     align-items: flex-start; }
     @media only screen and (max-width: 68.75em) {
       .footer-left {
-        flex-direction: column;
-        justify-content: space-between;
         height: 80%;
         padding-top: 4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer-left {
+        width: 100%;
+        padding-top: 2.5rem;
+        height: 45%; } }
     .footer-left-box {
       display: flex;
       justify-content: center;
@@ -101,25 +116,18 @@ body {
       @media only screen and (max-width: 68.75em) {
         .footer-left-box {
           flex-direction: column;
-          justify-content: space-between;
+          justify-content: flex-start;
           height: 80%; } }
   .footer__logo {
     padding-right: 2.8rem; }
   .footer__nav {
     display: flex;
     flex-wrap: wrap; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 68.75em) {
       .footer__nav {
-        flex-direction: column;
-        margin-top: 2rem; } }
+        margin-top: 3rem; } }
   .footer__nav-list:not(:last-child) {
     margin-right: 2.8rem; }
-    @media only screen and (max-width: 37.5em) {
-      .footer__nav-list:not(:last-child) {
-        margin-right: 0; } }
-  @media only screen and (max-width: 37.5em) {
-    .footer__nav-list {
-      margin-bottom: 1.5rem; } }
   .footer__nav-link {
     text-transform: uppercase;
     font-size: 1.4rem; }
@@ -131,6 +139,11 @@ body {
     background-color: #314e6f;
     color: #e9eae5;
     box-shadow: 0 0.7rem 1.5rem 0 rgba(55, 57, 59, 0.8); }
+    @media only screen and (max-width: 37.5em) {
+      .footer-right {
+        width: 100%;
+        height: 50%;
+        position: relative; } }
     .footer-right-box {
       letter-spacing: 0.7px;
       width: 100%;
@@ -139,6 +152,9 @@ body {
       flex-direction: column;
       height: 80%;
       justify-content: center; }
+      @media only screen and (max-width: 37.5em) {
+        .footer-right-box {
+          height: 100%; } }
     .footer-right__line {
       background-color: #e9eae5;
       height: 2px;
@@ -160,17 +176,15 @@ body {
     .footer-right__email {
       align-self: center;
       padding-left: 7rem; }
-      @media only screen and (max-width: 37.5em) {
-        .footer-right__email {
-          align-self: flex-start;
-          padding: 2rem; } }
   .footer__copyright {
     width: 100%;
-    height: 35%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    color: #e9eae5; }
+    color: #e9eae5;
+    background-color: #36567b;
+    padding: 2rem;
+    font-size: 1.6rem; }
 
 .header {
   background-color: #36567b;
@@ -179,6 +193,9 @@ body {
   padding-top: 6rem;
   position: relative;
   border-bottom: 2px solid #e9eae5; }
+  @media only screen and (max-width: 25em) {
+    .header {
+      height: 66.666vh; } }
 
 .heading {
   width: 80%;
@@ -187,12 +204,22 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .heading {
+      flex-direction: column; } }
   .heading__nav {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 37.5em) {
+      .heading__nav {
+        padding-top: 3rem; } }
     .heading__nav-list {
       text-transform: uppercase; }
       .heading__nav-list:not(:last-child) {
         margin-right: 3.7rem; }
+      @media only screen and (max-width: 37.5em) {
+        .heading__nav-list {
+          padding-bottom: 2rem; } }
     .heading__nav-link, .heading__nav-link:visited {
       font-size: 1.6rem; }
 
@@ -217,6 +244,13 @@ body {
     font-weight: 300;
     position: relative;
     width: 100%; }
+    @media only screen and (max-width: 37.5em) {
+      .center__subtitle {
+        font-size: 1.6rem;
+        letter-spacing: 0.3rem; } }
+    @media only screen and (max-width: 25em) {
+      .center__subtitle {
+        letter-spacing: 0.2rem; } }
     .center__subtitle span {
       background-color: #36567b;
       display: inline-block;
@@ -243,13 +277,21 @@ body {
 .about-us {
   height: 100vh;
   width: 100%; }
+  @media only screen and (max-width: 25em) {
+    .about-us {
+      height: 66.666vh; } }
 
 .article {
   width: 100%;
   height: 50%;
-  margin: 0 auto;
   position: relative;
-  background-color: #314e6f; }
+  background-color: #314e6f;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (max-width: 25em) {
+    .article {
+      box-shadow: 0 1.2rem 5rem 0 rgba(55, 57, 59, 0.8); } }
   .article:hover {
     position: relative;
     box-shadow: 0 1.2rem 5rem 0 rgba(55, 57, 59, 0.8); }
@@ -257,8 +299,7 @@ body {
     transition: all 0.2s ease-in-out; }
   .article__box {
     width: 65%;
-    margin: 0 auto;
-    padding-top: 13rem; }
+    transform: translateY(-1rem); }
   .article__title {
     font-size: 2.4rem;
     background-image: linear-gradient(120deg, #c09c77, #9b7247 27%);
@@ -302,10 +343,16 @@ body {
     background-image: url(../../img/product_bg.jpeg);
     background-size: cover;
     background-position: 100% 65%; }
+  @media only screen and (max-width: 25em) {
+    .product {
+      height: 66.666vh; } }
 
 .services {
   height: 100vh;
   width: 100%; }
+  @media only screen and (max-width: 25em) {
+    .services {
+      height: 66.666vh; } }
 
 .logo-img--pink {
   width: 50%;

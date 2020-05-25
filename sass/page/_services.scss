@@ -1,6 +1,10 @@
 .services {
   height: 100vh;
   width: 100%;
+
+  @include respond(phone-small) {
+    height: 66.666vh;
+  }
 }
 
 .logo-img {
