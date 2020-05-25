@@ -59,9 +59,10 @@
 
   &--grey {
     width: 50%;
-    position: relative;
-    background-image: url(../img/paper_texture.jpeg);
+    background-image: url(../img/paper.jpeg);
     background-size: cover;
+    background-position: bottom;
+    position: relative;
   }
 
   &--blue {
