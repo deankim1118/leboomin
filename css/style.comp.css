@@ -322,7 +322,7 @@ body {
   .logo-img--grey {
     width: 50%;
     position: relative;
-    background-image: url(../../img/paper_texture.jpeg);
+    background-image: url(../img/paper_texture.jpeg);
     background-size: cover; }
   .logo-img--blue {
     width: 50%;
@@ -340,7 +340,7 @@ body {
   width: 100%; }
   .product__img-box {
     height: 50%;
-    background-image: url(../../img/product_bg.jpeg);
+    background-image: url(../img/product_bg.jpeg);
     background-size: cover;
     background-position: 100% 65%; }
   @media only screen and (max-width: 25em) {
