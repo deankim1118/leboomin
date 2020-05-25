@@ -17,6 +17,10 @@ ul,
 li {
   list-style: none; }
 
+a {
+  text-decoration: none;
+  color: #e9eae5; }
+
 body {
   font-family: 'Lora', serif, Arial;
   font-weight: 400;
@@ -49,12 +53,71 @@ body {
 .u-center-text {
   text-align: center; }
 
+.footer {
+  background-color: #36567b;
+  border-top: 2px solid #e9eae5;
+  height: 33vh; }
+  .footer__container {
+    display: flex;
+    height: 55%; }
+  .footer-left {
+    width: 50%;
+    height: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6.5rem; }
+  .footer__logo {
+    padding-right: 2.8rem; }
+  .footer__nav {
+    display: flex; }
+  .footer__nav-list:not(:last-child) {
+    margin-right: 2.8rem; }
+  .footer__nav-link {
+    text-transform: uppercase;
+    font-size: 1.4rem; }
+  .footer-right {
+    width: 50%;
+    background-color: #314e6f;
+    color: #e9eae5;
+    padding-left: 5rem;
+    box-shadow: 0 1.2rem 6rem 0 rgba(30, 30, 30, 0.8); }
+    .footer-right__line {
+      background-color: #e9eae5;
+      height: 2px;
+      display: inline-block;
+      width: 3rem;
+      margin: 4rem 0 5rem 0; }
+    .footer-right__h5 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.5px; }
+    .footer-right__contact {
+      display: flex;
+      padding-top: 3rem; }
+    .footer-right__h4 {
+      font-weight: 400; }
+    .footer-right__email {
+      text-align: center;
+      width: 60%; }
+  .footer__copyright {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #e9eae5;
+    padding-bottom: 3rem; }
+
 .header {
   background-color: #36567b;
   width: 100%;
   height: 100vh;
   padding-top: 6rem;
-  position: relative; }
+  position: relative;
+  border-bottom: 2px solid #e9eae5; }
 
 .heading {
   width: 80%;
@@ -63,10 +126,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .heading__logo-box {
-    width: 12rem; }
-  .heading__logo {
-    width: 100%; }
   .heading__nav {
     display: flex; }
     .heading__nav-list {
@@ -74,8 +133,6 @@ body {
       .heading__nav-list:not(:last-child) {
         margin-right: 3.7rem; }
     .heading__nav-link {
-      text-decoration: none;
-      color: #e9eae5;
       font-size: 1.6rem; }
 
 .center {
@@ -115,6 +172,12 @@ body {
       left: 0;
       top: 50%;
       z-index: 1; }
+
+.logo-box {
+  width: 12rem; }
+
+.logo--small {
+  width: 100%; }
 
 .about-us {
   height: 100vh;
