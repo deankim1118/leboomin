@@ -321,9 +321,10 @@ body {
   height: 50%; }
   .logo-img--grey {
     width: 50%;
-    position: relative;
-    background-image: url(../img/paper_texture.jpeg);
-    background-size: cover; }
+    background-image: url(../img/paper.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative; }
   .logo-img--blue {
     width: 50%;
     position: relative;
