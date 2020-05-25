@@ -340,7 +340,7 @@ body {
   width: 100%; }
   .product__img-box {
     height: 50%;
-    background-image: url(../../img/product_bg.png);
+    background-image: url(../../img/product_bg.jpeg);
     background-size: cover;
     background-position: 100% 65%; }
   @media only screen and (max-width: 25em) {
