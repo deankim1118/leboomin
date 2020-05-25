@@ -19,14 +19,14 @@
     }
   }
   @if ($breakpoint == tab-land) {
-    // 1200px
-    @media only screen and (max-width: 75em) {
+    // 1100px
+    @media only screen and (max-width: 68.75em) {
       @content;
     }
   }
   @if ($breakpoint == big-desktop) {
-    // 1800px
-    @media only screen and (min-width: 112.5em) {
+    // 1900px  1800 / 16px
+    @media only screen and (min-width: 118.75em) {
       @content;
     }
   }

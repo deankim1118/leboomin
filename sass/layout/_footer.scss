@@ -1,75 +1,133 @@
 .footer {
+  position: relative;
   background-color: $color-blue-light;
   border-top: 2px solid $color-font;
   height: 33vh;
+
+  @include respond(tab-port) {
+    height: 30vh;
+  }
 
   &__container {
     display: flex;
     height: 55%;
   }
+
   &-left {
     width: 50%;
-    height: 45%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-top: 6.5rem;
+    padding-top: 5rem;
+    align-items: flex-start;
+
+    @include respond(tab-land) {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 80%;
+      padding-top: 4rem;
+    }
+
+    &-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      @include respond(tab-land) {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+      }
+    }
   }
   &__logo {
     padding-right: 2.8rem;
   }
   &__nav {
     display: flex;
+    flex-wrap: wrap;
+
+    @include respond(phone) {
+      flex-direction: column;
+      margin-top: 2rem;
+    }
   }
   &__nav-list {
     &:not(:last-child) {
       margin-right: 2.8rem;
+
+      @include respond(phone) {
+        margin-right: 0;
+      }
+    }
+    @include respond(phone) {
+      margin-bottom: 1.5rem;
     }
   }
   &__nav-link {
     text-transform: uppercase;
     font-size: 1.4rem;
   }
+
+  // Right side of footer
   &-right {
+    position: absolute;
     width: 50%;
+    right: 0;
+    height: 65%;
     background-color: $color-blue-dark;
     color: $color-font;
-    padding-left: 5rem;
     box-shadow: 0 0.7rem 1.5rem 0 rgba(#37393b, 0.8);
+
+    &-box {
+      letter-spacing: 0.7px;
+      width: 100%;
+      padding-left: 4.8rem;
+      display: flex;
+      flex-direction: column;
+      height: 80%;
+      justify-content: center;
+    }
+
     &__line {
       background-color: #e9eae5;
       height: 2px;
       display: inline-block;
       width: 3rem;
-      margin: 4rem 0 5rem 0;
+      margin-bottom: 3vh;
     }
     &__h5 {
       font-size: 1.4rem;
       font-weight: 400;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
     }
     &__contact {
       display: flex;
+      flex-direction: column;
+
       padding-top: 3rem;
+      justify-content: space-between;
+      height: 40%;
     }
     &__h4 {
       font-weight: 400;
     }
     &__email {
-      text-align: center;
-      width: 60%;
+      align-self: center;
+      padding-left: 7rem;
+
+      @include respond(phone) {
+        align-self: flex-start;
+        padding: 2rem;
+      }
     }
   }
 
   &__copyright {
     width: 100%;
-    height: 45%;
+    height: 35%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     color: $color-font;
-    padding-bottom: 3rem;
   }
 }
