@@ -1,0 +1,196 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  background-color: #e9eae5; }
+
+ul,
+li {
+  list-style: none; }
+
+body {
+  font-family: 'Lora', serif, Arial;
+  font-weight: 400;
+  line-height: 1; }
+
+.u-margin-bottom-big {
+  margin-bottom: 6rem; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .u-margin-bottom-big {
+      margin-bottom: 2.5rem; } }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 2rem; } }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.8rem; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-small {
+      margin-bottom: 1.5rem; } }
+
+.u-center-text {
+  text-align: center; }
+
+.header {
+  background-color: #36567b;
+  width: 100%;
+  height: 100vh;
+  padding-top: 6rem;
+  position: relative; }
+
+.heading {
+  width: 80%;
+  max-width: 144rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .heading__logo-box {
+    width: 12rem; }
+  .heading__logo {
+    width: 100%; }
+  .heading__nav {
+    display: flex; }
+    .heading__nav-list {
+      text-transform: uppercase; }
+      .heading__nav-list:not(:last-child) {
+        margin-right: 3.7rem; }
+    .heading__nav-link {
+      text-decoration: none;
+      color: #e9eae5;
+      font-size: 1.6rem; }
+
+.center {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%); }
+  .center__title {
+    width: 100%; }
+  .center__subtitle-box {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2rem;
+    color: #e9eae5;
+    width: 100%;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    text-align: center; }
+  .center__subtitle {
+    letter-spacing: 0.48rem;
+    font-weight: 300;
+    position: relative;
+    width: 100%; }
+    .center__subtitle span {
+      background-color: #36567b;
+      display: inline-block;
+      z-index: 30;
+      position: relative;
+      padding: 1rem 1rem 1rem 1.6rem; }
+    .center__subtitle::after {
+      content: '';
+      display: inline-block;
+      color: #e9eae5;
+      width: 100%;
+      border-bottom: solid 1px #fff;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      z-index: 1; }
+
+.about-us {
+  height: 100vh;
+  width: 100%; }
+
+.article {
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+  position: relative;
+  background-color: #314e6f; }
+  .article__box {
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 13rem; }
+  .article__title {
+    font-size: 2.4rem;
+    background-image: linear-gradient(120deg, #c09c77, #9b7247 27%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .article__line {
+    background-color: #e9eae5;
+    height: 2px;
+    display: inline-block;
+    width: 3rem;
+    margin: 2rem 0; }
+  .article__p {
+    color: #e9eae5;
+    line-height: 2; }
+
+.logo-img {
+  display: flex;
+  height: 50%; }
+  .logo-img--grey {
+    width: 50%;
+    position: relative;
+    background-image: url(../../img/Paper_Texture.jpeg);
+    background-size: cover; }
+  .logo-img--blue {
+    width: 50%;
+    position: relative;
+    background-color: #314e6f; }
+  .logo-img--letter {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%); }
+
+.product {
+  height: 100vh;
+  width: 100%; }
+  .product__img-box {
+    height: 50%;
+    background-image: url(../../img/product_bg.jpeg);
+    background-size: cover;
+    background-position: 100% 65%; }
+
+.services {
+  height: 100vh;
+  width: 100%; }
+
+.logo-img--pink {
+  width: 50%;
+  position: relative;
+  background-color: #fdcac7; }
+
+.logo-img--mint {
+  width: 50%;
+  position: relative;
+  background-color: #d3f0eb; }
+
+.logo-img--letter {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%); }

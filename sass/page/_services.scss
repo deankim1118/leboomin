@@ -1,0 +1,23 @@
+.services {
+  height: 100vh;
+  width: 100%;
+}
+
+.logo-img {
+  &--pink {
+    width: 50%;
+    position: relative;
+    background-color: $color-pink;
+  }
+
+  &--mint {
+    width: 50%;
+    position: relative;
+    background-color: $color-mint;
+  }
+
+  &--letter {
+    width: 60%;
+    @include centering;
+  }
+}

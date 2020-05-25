@@ -1,0 +1,85 @@
+.header {
+  background-color: $color-blue-light;
+  width: 100%;
+  height: 100vh;
+  padding-top: 6rem;
+  position: relative;
+}
+
+.heading {
+  width: 80%;
+  max-width: 144rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo-box {
+    width: 12rem;
+  }
+
+  &__logo {
+    width: 100%;
+  }
+
+  &__nav {
+    display: flex;
+
+    &-list {
+      text-transform: uppercase;
+
+      &:not(:last-child) {
+        margin-right: 3.7rem;
+      }
+    }
+    &-link {
+      text-decoration: none;
+      color: $color-font;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.center {
+  width: 50%;
+  @include centering;
+
+  &__title {
+    width: 100%;
+  }
+
+  &__subtitle-box {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2rem;
+    color: $color-font;
+    width: 100%;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__subtitle {
+    letter-spacing: 0.48rem;
+    font-weight: 300;
+    position: relative;
+    width: 100%;
+
+    & span {
+      background-color: $color-blue-light;
+      display: inline-block;
+      z-index: 30;
+      position: relative;
+      padding: 1rem 1rem 1rem 1.6rem;
+    }
+    &::after {
+      content: '';
+      display: inline-block;
+      color: $color-font;
+      width: 100%;
+      border-bottom: solid 1px #fff;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      z-index: 1;
+    }
+  }
+}
