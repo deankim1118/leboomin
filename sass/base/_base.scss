@@ -37,3 +37,18 @@ a {
   text-decoration: none;
   color: $color-font;
 }
+
+.link--hover,
+.link--hover:visited {
+  transition: all 0.1s linear;
+
+  &:hover {
+    display: inline-block;
+    box-shadow: 0 0.2rem 2rem 0 rgba(#1e1e1e, 0.3);
+    transform: translateY(-0.3rem) scale(1.2);
+  }
+
+  &:active {
+    transform: translateY(0) scale(1.1);
+  }
+}

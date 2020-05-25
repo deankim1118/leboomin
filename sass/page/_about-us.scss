@@ -10,6 +10,15 @@
   position: relative;
   background-color: $color-blue-dark;
 
+  &:hover {
+    position: relative;
+    box-shadow: $box-shadow-default;
+  }
+
+  .logo-img--hover {
+    transition: all 0.2s ease-in-out;
+  }
+
   &__box {
     width: 65%;
     margin: 0 auto;
